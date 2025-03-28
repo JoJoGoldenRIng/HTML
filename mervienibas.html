@@ -8,15 +8,30 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         <title>webFormas</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        body {
+            background: url('images/cipari.jpg');
+            background-repeat: repeat;
+            }
+        .rectangle {
+            height: 100px;
+            width: 100%;
+            background-color:  #dcdc35;
+            }
+        </style>
+
     </head>
     <body>
         <h1>Informācijas daudzuma mērvienības</h1>
+        <font-size: 20px>
+        <div class="rectangle">
         <form action="/action_page.php">
             <input type="text" id="GB" name="GB">
-            <label for="GB">GB=</label><br>
-            <input type="button" value="Izteikt megabaitos" name="reiz1" onclick="rez1.value=GB.value*1024"> <input name="rez1"><br>
-            <input type="button" value="Izteikt mibibaitos" name="reiz2" onclick="rez2.value=GB.value*953.67431640625"> <input name="rez2"><br>
-            
+            <label for="GB">GB=</label><br><br>
+            <input type="button" value="Izteikt megabaitos" name="reiz1" onclick="rez1.value=GB.value*1024"> <input name="rez1">MB<br><br>
+            <input type="button" value="Izteikt mibibaitos" name="reiz2" onclick="rez2.value=GB.value*953.67431640625"> <input name="rez2"> MiB
+        </div>
+        </style>
         </form>
         
     </body>
