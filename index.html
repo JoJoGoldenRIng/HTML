@@ -10,36 +10,48 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             .btn .button {
-                background-color: #04AA6D;
-                border: none;
-                color: white;
-                padding: 15px 32px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                margin: 4px 2px;
-                cursor: pointer;
-                }
+    	background-color: #04AA6D;
+    	border: none;
+    	color: white;
+   	padding: 15px 32px;
+    	text-align: center;
+    	text-decoration: none;
+    	display: inline-block;
+    	font-size: 16px;
+    	margin: 4px 2px;
+    	cursor: pointer;
+    	border-radius: 8px;
+    	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    	transition: background-color 0.3s, transform 0.2s;
+	}
+
              .btn .button:hover {
-                background-color: #3e8e41;
-}
-            .top {
-                top:0;
-                position: fixed;
-                background-color: #669900;
-                height: 60px;
-                width: 100%;
-                }
-            .rectangle-2 {
-                
-                }
+    	background-color: #3e8e41;
+    	transform: translateY(-2px);
+   	box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+	}
+
+             .btn .button:active {
+    	transform: translateY(0);
+    	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	}
+
+
+             .navbar {
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            background-color: #f8f8f8; 
+            padding: 10px;
+            z-index: 1000;
+        }
                 
         </style>
     </head>
     <body>
     <h1> <center>Mans datorikas portfoliO</h1>
-    <div class="btn">
+    <div class="navbar">
     <div class="btn">
         <a href="#" class="button">Home</a>
         <a href="#0" class="button">Rastrgrafikas darbs (GIMP)</a>
@@ -48,10 +60,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <a href="#3" class="button">Ms Word</a>
         <a href="#4" class="button">Ms Excel</a>
         <a href="#5" class="button">Video veidošana</a>
-        <a href="mervienibas.html" class="button"> webfORMAS7</a>
+        <a href="mervienibas.html" class="button">webFormas</a>
         <a href="otrais.html" class="button"> Drošu paroļu veidošana</a>
         <a href="skola.html" class="button"> Mana skola</a>
-        
         </div>
     </div>
     <h3 id="0">Rastrgrafikas darbs (GIMP)</h3>
